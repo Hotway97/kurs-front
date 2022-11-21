@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body::before {
+    background: url('https://wallpapercave.com/wp/wp10653759.jpg') left / cover no-repeat;
+}
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;  
+    height: 1000px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    display: grid;
+    height: 45px;
+    width: 100%;
+    color: rgb(174, 9, 9);
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 5px;
+    padding-left: 25px;
+    background: rgba(255, 3, 3, 0.55);
+    backdrop-filter: blur( 5px );
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(230, 12, 12);
+    background-color: rgba(253, 3, 0, 3.607);
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.form-title {
+    
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 750px) {
+    .register-form-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 45px 60px 60px 75px 75px;
+        grid-template-areas: 
+        "Title ."
+        "Name surname"
+        "Pswd Mail"
+        "Button Button";
+        grid-column-gap: 10px;
+
+        position: relative;
+        z-index: 2;
+        height: 280px;
+        max-width: 90%;
+        width: auto;
+        
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;   
+        padding-top: 20px;
+        padding-bottom: 20px;
+        opacity: 1;
+        background: linear-gradient(rgb(255, 145, 0), rgb(246, 238, 0));
+        backdrop-filter: blur( 5px );
+        box-shadow: 0 8px 32px 0 rgba(201, 13, 13, 0.37);
+
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    
+    .form-buttons {
+        grid-area: Button;
+        
+    }
+
+    .form-title {
+        
+        grid-area: Title;
+        
+    }
+
+    .form-field-name {
+        grid-area: Name;    
+        margin-bottom: 13px;   
+    }
+
+    .form-field-secname {
+        grid-area: surname;     
+        margin-bottom: 13px; 
+    }
+
+    .form-field-mail {
+        grid-area: Mail;     
+        margin-bottom: 13px; 
+    }
+
+    .form-field-pswd {
+        grid-area: Pswd;     
+        margin-bottom: 13px; 
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    form {
+       
+        align-items: center;
+        justify-content: center;
+    }
+    .register-form-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        position: relative;
+        z-index: 2;
+        
+        width: 95%;
+        justify-self: center;
+
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;   
+        padding-top: 20px;
+        padding-bottom: 20px;
+        opacity: 1;
+        background: linear-gradient(rgb(255, 145, 0), rgb(246, 238, 0));
+        box-shadow: 0 8px 32px 0 rgba(201, 13, 13, 0.521);
+        backdrop-filter: blur( 5px );
+    }
+}
+
+.button {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background:  rgb(230, 12, 12);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(191, 239, 19, 0.948);
+}
+
+form {
+    display: flex;
+
+    justify-content: center;
+    position: absolute;
+   
+    width: 100%;    
+  }
+
+  .form-cont {
+    margin-top: 10%;
+    margin-bottom: 100px;
+    width: 80%;
+    margin-left: 10%;
+    background: linear-gradient(to right bottom, #f10303, #422a2a);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+  
+  }

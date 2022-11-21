@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: url(style/maxresdefault.jpg) left / cover no-repeat;
+}
+
+.leftcolumn {
+    margin-left: 10px;
+    float: left;
+    width: 70%;
+}
+
+.rightcolumn {
+    margin-right: 5px;
+    margin-top:50px;
+    float: right;
+    width: 25%;
+}
+
+
+.card {
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.741) 0%, rgba(255, 0, 0, 0.562) 100%);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+}
+.roww {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
